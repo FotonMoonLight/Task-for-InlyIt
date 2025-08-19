@@ -1,41 +1,37 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using DMSkin.Core;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows.Controls;
+using System.Xml.Linq;
 
 namespace Project.Data
 {
-    public class Product : INotifyPropertyChanged
+    public class Bucket : INotifyPropertyChanged
     {
         string name;
-        double price;
-        Image image;
+        int count;
         public int Id { get; set; }
         public string Name
         {
             get { return name; }
-            set { 
+            set
+            {
                 name = value;
                 OnPropertyChanged("Name");
             }
         }
-        public double Price
+        public int Count
         {
-            get { return price; }
+            get { return count; }
             set
             {
-                price = value; 
-                OnPropertyChanged("Price");
+                count = value;
+                OnPropertyChanged("Count");
             }
         }
-
         public event PropertyChangedEventHandler? PropertyChanged;
         public void OnPropertyChanged([CallerMemberName] string prop = "")
         {

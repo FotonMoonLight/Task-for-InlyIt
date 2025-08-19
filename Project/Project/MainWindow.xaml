@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="ShopBtn" Content="Button" HorizontalAlignment="Left" Margin="275,217,0,0" VerticalAlignment="Top" Click="ShopBtn_Click"/>
+        <Button x:Name="ShopBtn" Content="В Магазин" HorizontalAlignment="Center" Margin="0,141,0,0" VerticalAlignment="Top" Click="ShopBtn_Click" Height="49" Width="124"/>
+        <Button x:Name="BucketBtn" Content="В Корзину" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Click="BucketBtn_Click" Height="49" Width="124"/>
+        <Label Content="Продукты" HorizontalAlignment="Center" Margin="0,28,0,0" VerticalAlignment="Top" Foreground="#FF0A0659" FontFamily="Impact" FontSize="36" FontWeight="Light"/>
 
     </Grid>
 </Window>

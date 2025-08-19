@@ -31,5 +31,12 @@ namespace Project
             shopPage.Show();
             this.Close();
         }
+
+        private void BucketBtn_Click(object sender, RoutedEventArgs e)
+        {
+            BucketPage bucketPage = new BucketPage();
+            bucketPage.Show();
+            this.Close();
+        }
     }
 }

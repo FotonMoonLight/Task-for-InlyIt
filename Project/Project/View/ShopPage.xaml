@@ -7,11 +7,16 @@
         mc:Ignorable="d"
         Title="ShopPage" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <TextBox Text="Filter" Grid.Row="0"></TextBox>
-        <DataGrid Grid.Row="1" Margin="0 40 0 0" ItemsSource="{Binding products}" AutoGenerateColumns="False">
+
+        <DataGrid Grid.Row="1" Margin="0 40 0 0" ItemsSource="{Binding products}" AutoGenerateColumns="False" ColumnWidth="Auto">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Price}"></DataGridTextColumn>
+
             </DataGrid.Columns>
+
         </DataGrid>
+        <Button Content="Назад" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Height="30" Width="63"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="714,5,0,0" VerticalAlignment="Top" Height="30" Width="63"/>
     </Grid>
 </Window>
